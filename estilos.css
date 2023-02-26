@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Raleway:wght@100;300;400;600&display=swap');
+*{
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: linear-gradient(to bottom, #7b777c, #676368, #535154, #403e41, #2e2d2f);}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.25em;}
+h3{font-size: 1.75em;}
+p{font-size: 1.25em;}
+
+body{
+    margin: 0;
+}
+
+button {
+    background-color: #000000;
+    border: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: rgb(240, 236, 236);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   button:active {
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: rgb(0, 0, 0);
+   }
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+   }
+
+
+.header{
+    background-color: rgb(221, 165, 247);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 3em;
+    font-family: 'Gilda Display', serif;
+    text-shadow: 0 0 15px white;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+header a:hover{
+    color: black;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(media/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero{
+    color: white;
+}
+
+.info{
+    padding-bottom: 130px;
+}
+
+.info h1{
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+.info h2{
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: -10px;
+}
+
+.info .redes{
+    margin: 20px 0px;
+}
+
+.info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.info .redes a:hover{
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px white;
+}
+
+.info .foto{
+    position: relative;
+}
+
+.info .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    size: 200px;
+}
+
+
+#sobremi .container{
+    text-align: center;
+    padding: 200px 12px;
+    color: whitesmoke;
+    font-size: 1.25em;
+}
+
+#Formacion .container{
+    text-align: center;
+    padding: 150px 12px;
+    color: whitesmoke;
+}
+
+#habilidades{
+    background-color: rgb(31, 30, 31);
+    color: white;
+    text-align: center;
+}
+
+#habilidades .container{
+    padding: 150px 0px;
+}
+
+#habilidades h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#habilidades p{
+    display: none;
+}
+
+#habilidades .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(media/seo.jpeg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(media/ecommerce.jpeg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(media/disgrafico.jpeg);
+}
+
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#contacto h2{
+    font-size: 7vw;
+}
+
+#contacto button{
+    font-size: 3vw;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media screen(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+    #habilidades .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #habilidades p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #habilidades .carta{
+        padding: 50px;
+
+    }
+}
